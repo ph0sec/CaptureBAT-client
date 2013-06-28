@@ -1,0 +1,21 @@
+#[+,-]	[Process Created]	[Parent Process]	[Process Path]
+###################################################
+### Clean Windows XP SP 2 System		###
+###################################################
+#Windows update (it runs even if disabled)
++	wuauclt.exe	.*	C:\\WINDOWS\\system32\\wuauclt\.exe
+#
++	savedump.exe	.*	C:\\WINDOWS\\system32\\savedump\.exe
+#Standard screensaver
++	logon.scr	.*	C:\\WINDOWS\\system32\\logon\.scr
+#defragmenter
++	dfrgntfs.exe	.*	C:\\WINDOWS\\system32\\dfrgntfs\.exe
++	defrag.exe	.*	C:\\WINDOWS\\system32\\defrag\.exe
+###################################################
+### Microsoft Internet Explorer 6.0		###
+###################################################
++	iexplore.exe	.*	C:\\Program Files\\Internet Explorer\\iexplore.exe
+#agent server is an activeX control that starts upon displaying multimedia content
++	agentsvr.exe	.*	C:\\WINDOWS\\msagent\\agentsvr.exe
+#messenger activeX
++	msmsgs.exe	.*	C:\\Program Files\\Messenger\\msmsgs.exe

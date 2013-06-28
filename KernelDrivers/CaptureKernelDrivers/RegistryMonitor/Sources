@@ -1,0 +1,7 @@
+TARGETNAME=CaptureRegistryMonitor
+TARGETPATH=.
+TARGETTYPE=DRIVER
+
+TARGETLIBS=$(TARGETLIBS) \
+
+SOURCES=CaptureRegistryMonitor.c   \

@@ -1,0 +1,121 @@
+#[+,-]	[File Access]	[Process Name]	[File Path]
+###################################################
+### Clean Windows XP SP 2 System		###
+###################################################
++	Read	.*	.*
++	Create	.*	.*
++	Open	.*	.*
++	Write	C:\\program Files\\capture\\captureclient\.exe	C:\\program files\\capture\\logs\\.+
++	Delete	C:\\program Files\\capture\\captureclient\.exe	C:\\program files\\capture\\.+\.zip
+#Prefetch
++	Write	C:\\WINDOWS\\system32\\svchost\.exe	C:\\WINDOWS\\Prefetch\\.+
++	Write	System	C:\\WINDOWS\\Prefetch\\.+
+#NTFS Metadata
++	Write	.*	c:\\\$mft
++	Write	.*	c:\\\$mftmirr
++	Write	.*	c:\\\$logfile
++	Write	.*	c:\\\$volume
++	Write	.*	c:\\\$directory
++	Write	.*	c:\\\$AttrDef
++	Write	.*	c:\\\$boot
++	Write	.*	c:\\\$bitmap
++	Write	.*	c:\\\$badclus
++	Write	.*	c:\\\$quota
++	Write	.*	c:\\\$upcase
++	Write	.*	c:\\\$ReplaceAttribute2
++	Write	.*	c:\\\$converttononresident
+#Performance
++	Write	C:\\WINDOWS\\system32\\wbem\\wmiadap\.exe	C:\\WINDOWS\\system32\\wbem\\Performance\\.+
++	Write	C:\\WINDOWS\\system32\\wbem\\wmiadap\.exe	C:\\WINDOWS\\system32\\Perf.*
++	Write	C:\\WINDOWS\\system32\\svchost\.exe	C:\\WINDOWS\\Prefetch\\.+
++	Write	System	C:\\WINDOWS\\Prefetch\\.+
+#System Log Files
++	Write	System	C:\\Documents and Settings\\.+\\.+\.LOG
++	Write	System	C:\\WINDOWS\\system32\\config\\.+\.LOG
++	Write	System	C:\\WINDOWS\\Debug\\UserMode\\userenv\.log
++	Write	System	C:\\WINDOWS\\SoftwareDistribution\\ReportingEvents\.log
++	Write	C:\\WINDOWS\\system32\\winlogon\.exe	C:\\WINDOWS\\Debug\\UserMode\\userenv\.log
++	Write	C:\\WINDOWS\\system32\\svchost\.exe	C:\\WINDOWS\\.+\.log
++	Write	C:\\WINDOWS\\system32\\lsass\.exe	C:\\WINDOWS\\system32\\config\\.+\.LOG
++	Write	C:\\WINDOWS\\system32\\lsass\.exe	C:\\WINDOWS\\system32\\config\\SAM
++	Write	C:\\WINDOWS\\system32\\wbem\\wmiprvse\.exe	C:\\WINDOWS\\system32\\wbem\\Logs\\wmiprov\.log
+#Windows update
++	Write	C:\\WINDOWS\\system32\\wuauclt\.exe	C:\\WINDOWS\\WindowsUpdate\.log
++	Write	C:\\WINDOWS\\system32\\wuauclt\.exe	C:\\WINDOWS\\SoftwareDistribution\\DataStore\\Logs\\.+
++	Write	C:\\WINDOWS\\system32\\wuauclt\.exe	C:\\WINDOWS\\SoftwareDistribution\\DataStore\\DataStore\.edb
++	Write	C:\\WINDOWS\\system32\\wuauclt\.exe	C:\\WINDOWS\\SoftwareDistribution\\DataStore\\DataStore\.edb
+#System Events
++	Write	C:\\WINDOWS\\system32\\services\.exe	C:\\WINDOWS\\system32\\config\\AppEvent\.Evt
++	Write	C:\\WINDOWS\\system32\\services\.exe	C:\\WINDOWS\\system32\\config\\SysEvent\.Evt
++	Write	C:\\WINDOWS\\system32\\services\.exe	C:\\WINDOWS\\system32\\config\\SecEvent\.Evt
+#Mapping
++	Write	C:\\WINDOWS\\system32\\svchost\.exe	C:\\WINDOWS\\system32\\wbem\\.+
+#Cataloging
++	Write	C:\\WINDOWS\\system32\\svchost\.exe	C:\\WINDOWS\\system32\\CatRoot2\\.+
++	Write	C:\\WINDOWS\\system32\\svchost\.exe	C:\\WINDOWS\\system32\\CatRoot\\.+
+#System restore
++	Write	C:\\WINDOWS\\system32\\svchost\.exe	C:\\WINDOWS\\SoftwareDistribution\\WuRedir\\.+
++	Write	C:\\WINDOWS\\system32\\svchost\.exe	C:\\System Volume Information\\_restore.*
+#user data
++	Write	System	C:\\Documents and Settings\\.+\\Local Settings\\Application Data\\Microsoft\\Windows\\UsrClass\.dat
+###################################################
+### Internet Explorer 6.0 SP2			###
+###################################################
+#somehow VMwareService & System accesses the same files when IE is browsing.
++	Write	C:\\Program Files\\VMware\\VMware Tools\\VMwareService\.exe	.*
++	Write	System	.*
+# IE Temporary Files/Internet Cache. 
++	Write	C:\\Program Files\\Internet Explorer\\iexplore\.exe	C:\\WINDOWS\\Temp\\.+
++	Write	C:\\Program Files\\Internet Explorer\\iexplore\.exe	C:\\Documents and Settings\\.+\\Local Settings\\Temporary Internet Files\\Content\.IE5\\.+
++	Write	C:\\Program Files\\Internet Explorer\\iexplore\.exe	C:\\Documents and Settings\\.+\\Local Settings\\Temp\\.+tmp
++	Delete	C:\\Program Files\\Internet Explorer\\iexplore\.exe	C:\\WINDOWS\\Temp\\.+
++	Delete	C:\\Program Files\\Internet Explorer\\iexplore\.exe	C:\\Documents and Settings\\.+\\Local Settings\\Temporary Internet Files\\Content\.IE5\\.+
++	Delete	C:\\Program Files\\Internet Explorer\\iexplore\.exe	C:\\Documents and Settings\\.+\\Local Settings\\Temp\\.+tmp
+# History
++	Write	C:\\Program Files\\Internet Explorer\\iexplore\.exe	C:\\Documents and Settings\\.+\\Local Settings\\History\\History.IE5\\.+
++	Delete	C:\\Program Files\\Internet Explorer\\iexplore\.exe	C:\\Documents and Settings\\.+\\Local Settings\\History\\History.IE5\\.+
+# IE Cookies
++	Write	C:\\Program Files\\Internet Explorer\\iexplore\.exe	C:\\Documents and Settings\\.+\\Cookies\\.+
++	Write	C:\\Program Files\\Internet Explorer\\iexplore\.exe	C:\\Documents and Settings\\.+\\Cookies\\index.dat
++	Delete	C:\\Program Files\\Internet Explorer\\iexplore\.exe	C:\\Documents and Settings\\.+\\Cookies\\.+
++	Delete	C:\\Program Files\\Internet Explorer\\iexplore\.exe	C:\\Documents and Settings\\.+\\Cookies\\index.dat
+# User data
++	Write	C:\\Program Files\\Internet Explorer\\iexplore\.exe	C:\\Documents and Settings\\.+\\Application Data\\Microsoft\\CryptnetUrlCache
++	Write	C:\\Program Files\\Internet Explorer\\iexplore\.exe	C:\\Documents and Settings\\.+\\UserData\\.+
++	Delete	C:\\Program Files\\Internet Explorer\\iexplore\.exe	C:\\Documents and Settings\\.+\\Application Data\\Microsoft\\CryptnetUrlCache
++	Delete	C:\\Program Files\\Internet Explorer\\iexplore\.exe	C:\\Documents and Settings\\.+\\UserData\\.+
+# Plug ins (like Flash player)
++	Write	C:\\Program Files\\Internet Explorer\\iexplore\.exe	C:\\Documents and Settings\\.+\\Application Data\\.+
++	Delete	C:\\Program Files\\Internet Explorer\\iexplore\.exe	C:\\Documents and Settings\\.+\\Application Data\\.+
+# DRM related stuff
++	Write	C:\\Program Files\\Internet Explorer\\iexplore\.exe	C:\\Documents and Settings\\.+\\DRM\\.+
++	Delete	C:\\Program Files\\Internet Explorer\\iexplore\.exe	C:\\Documents and Settings\\.+\\DRM\\.+
+# msg activeX
++	Write	C:\\Program Files\\Messenger\\msmsgs\.exe	C:\\Documents and Settings\\.+\\NTUSER.DAT.LOG
++	Delete	C:\\Program Files\\Messenger\\msmsgs\.exe	C:\\Documents and Settings\\.+\\NTUSER.DAT.LOG
+###################################################
+### Minus List - General Malicious Activity	###
+###################################################
+# Alert about executables or scripts that are written to disk
+-	Write	.*	.+\.bat
+-	Write	.*	.+\.cmd
+-	Write	.*	.+\.exe
+-	Write	.*	.+\.inf
+-	Write	.*	.+\.lnk
+-	Write	.*	.+\.msi
+-	Write	.*	.+\.msp
+-	Write	.*	.+\.pif
+-	Write	.*	.+\.reg
+-	Write	.*	.+\.sct
+-	Write	.*	.+\.shs
+-	Write	.*	.+\.scr
+-	Write	.*	.+\.wsc
+-	Write	.*	.+\.wsf
+-	Write	.*	.+\.wsh
+#commented out for IE because \.com cache files and \.vb script files are very common
+#-	Write	.*	.+\.vb
+#-	Write	.*	.+\.com
+# Alert about modifications to startup locations
+-	Write	.*	C:\\Documents and Settings\\.+\\Start Menu\\Programs\\Startup.+
+-	Write	.*	C:\\WINDOWS\\win.ini
+-	Write	.*	C:\\WINDOWS\\Tasks\\.+

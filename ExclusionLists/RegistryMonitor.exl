@@ -1,0 +1,228 @@
+#[+,-]	[Registry Event]	[Process Name]	[Registry Path]
+###################################################
+### Microsoft Windows XP SP2			###
+###################################################
++	OpenKey	.*	.*
++	CreateKey	.*	.*
++	CloseKey	.*	.*
++	EnumerateKey	.*	.*
++	EnumerateValueKey	.*	.*
++	QueryValueKey	.*	.*
++	QueryKey	.*	.*
++	SetValueKey	.*	HKU\\.+\\SessionInformation\\ProgramCount
++	SetValueKey	.*	HKCU\\Software\\Microsoft\\Windows\\ShellNoRoam.*
++	SetValueKey	.*	HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\.+
++	SetValueKey	.*	HKLM\\SOFTWARE\\Microsoft\\Cryptography\\RNG\\Seed.*
++	SetValueKey	C:\\WINDOWS\\explorer.exe	HKCU\\SessionInformation\\.+
++	SetValueKey	C:\\WINDOWS\\explorer.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\.+
++	SetValueKey	C:\\WINDOWS\\explorer.exe	HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\.+
++	SetValueKey	C:\\WINDOWS\\explorer.exe	HKU\\.+\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\.+
++	SetValueKey	C:\\WINDOWS\\system32\\winlogon.exe	HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Group Policy\\State\\.+
++	SetValueKey	C:\\WINDOWS\\system32\\svchost.exe	\\REGISTRY\\USER\\.+
++	SetValueKey	C:\\WINDOWS\\system32\\svchost.exe	HKU\\.+
++	SetValueKey	C:\\WINDOWS\\system32\\svchost.exe	HKCU\\Software\\Microsoft\\SystemCertificates\\Root\\.+
++	SetValueKey	C:\\WINDOWS\\system32\\svchost.exe	HKLM\\SOFTWARE\\Microsoft\\SystemCertificates\\AuthRoot\\.+
++	SetValueKey	C:\\WINDOWS\\system32\\svchost.exe	HKLM\\SOFTWARE\\Microsoft\\PCHealth\\.+
++	SetValueKey	C:\\WINDOWS\\system32\\svchost.exe	HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\.+
++	SetValueKey	C:\\WINDOWS\\system32\\svchost.exe	HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\.+
++	SetValueKey	C:\\WINDOWS\\system32\\svchost.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\.+
++	SetValueKey	C:\\WINDOWS\\system32\\svchost.exe	HKLM\\SYSTEM\\ControlSet001\\.+
++	SetValueKey	C:\\WINDOWS\\system32\\services.exe	HKLM\\SYSTEM\\ControlSet001\\.+
++	SetValueKey	C:\\WINDOWS\\system32\\lsass.exe	HKLM\\SECURITY\\.+
++	SetValueKey	C:\\WINDOWS\\system32\\lsass.exe	HKCU\\Software\\Microsoft\\Protected Storage System Provider\\.+
++	SetValueKey	C:\\WINDOWS\\system32\\wbem\\wmiadap.exe	HKLM\\SOFTWARE\\Microsoft\\WBEM\\.+
++	SetValueKey	C:\\WINDOWS\\system32\\wbem\\wmiadap.exe	HKLM\\SYSTEM\\ControlSet001\\Services\\WmiApRpl\\Performance\\.+
++	SetValueKey	C:\\WINDOWS\\system32\\wbem\\wmiadap.exe	HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Perflib\\.+
++	SetValueKey	C:\\WINDOWS\\system32\\wbem\\wmiprvse.exe	HKLM\\SOFTWARE\\Microsoft\\WBEM\\WDM\\.+
++	DeleteValueKey	.*	HKU\\.+\\SessionInformation\\ProgramCount
++	DeleteValueKey	.*	HKCU\\Software\\Microsoft\\Windows\\ShellNoRoam.*
++	DeleteValueKey	.*	HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\.+
++	DeleteValueKey	.*	HKLM\\SOFTWARE\\Microsoft\\Cryptography\\RNG\\Seed.*
++	DeleteValueKey	C:\\WINDOWS\\explorer.exe	HKCU\\SessionInformation\\.+
++	DeleteValueKey	C:\\WINDOWS\\explorer.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\.+
++	DeleteValueKey	C:\\WINDOWS\\explorer.exe	HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\.+
++	DeleteValueKey	C:\\WINDOWS\\explorer.exe	HKU\\.+\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\.+
++	DeleteValueKey	C:\\WINDOWS\\system32\\winlogon.exe	HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Group Policy\\State\\.+
++	DeleteValueKey	C:\\WINDOWS\\system32\\svchost.exe	\\REGISTRY\\USER\\.+
++	DeleteValueKey	C:\\WINDOWS\\system32\\svchost.exe	HKU\\.+
++	DeleteValueKey	C:\\WINDOWS\\system32\\svchost.exe	HKCU\\Software\\Microsoft\\SystemCertificates\\Root\\.+
++	DeleteValueKey	C:\\WINDOWS\\system32\\svchost.exe	HKLM\\SOFTWARE\\Microsoft\\SystemCertificates\\AuthRoot\\.+
++	DeleteValueKey	C:\\WINDOWS\\system32\\svchost.exe	HKLM\\SOFTWARE\\Microsoft\\PCHealth\\.+
++	DeleteValueKey	C:\\WINDOWS\\system32\\svchost.exe	HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\.+
++	DeleteValueKey	C:\\WINDOWS\\system32\\svchost.exe	HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\.+
++	DeleteValueKey	C:\\WINDOWS\\system32\\svchost.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\.+
++	DeleteValueKey	C:\\WINDOWS\\system32\\svchost.exe	HKCU\\Software\\Microsoft\\SystemCertificates\\Root\\.+
++	DeleteValueKey	C:\\WINDOWS\\system32\\svchost.exe	HKLM\\SYSTEM\\ControlSet001\\.+
++	DeleteValueKey	C:\\WINDOWS\\system32\\services.exe	HKLM\\SYSTEM\\ControlSet001\\.+
++	DeleteValueKey	C:\\WINDOWS\\system32\\lsass.exe	HKLM\\SECURITY\\.+
++	DeleteValueKey	C:\\WINDOWS\\system32\\lsass.exe	HKCU\\Software\\Microsoft\\Protected Storage System Provider\\.+
++	DeleteValueKey	C:\\WINDOWS\\system32\\wbem\\wmiadap.exe	HKLM\\SOFTWARE\\Microsoft\\WBEM\\.+
++	DeleteValueKey	C:\\WINDOWS\\system32\\wbem\\wmiadap.exe	HKLM\\SYSTEM\\ControlSet001\\Services\\WmiApRpl\\Performance\\.+
++	DeleteValueKey	C:\\WINDOWS\\system32\\wbem\\wmiadap.exe	HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Perflib\\.+
++	DeleteValueKey	C:\\WINDOWS\\system32\\wbem\\wmiprvse.exe	HKLM\\SOFTWARE\\Microsoft\\WBEM\\WDM\\.+
+#defrag
++	SetValueKey	C:\\WINDOWS\\system32\\dfrgntfs.exe	HKLM\\SOFTWARE\\Microsoft\\Dfrg.*
++	DeleteValueKey	C:\\WINDOWS\\system32\\dfrgntfs.exe	HKLM\\SOFTWARE\\Microsoft\\Dfrg.*
+#windows update
++	SetValueKey	C:\\WINDOWS\\system32\\wuauclt.exe	HKLM\\SYSTEM\\ControlSet001\\Services\\Eventlog\\Application\\ESENT\\.+
++	DeleteValueKey	C:\\WINDOWS\\system32\\wuauclt.exe	HKLM\\SYSTEM\\ControlSet001\\Services\\Eventlog\\Application\\ESENT\\.+
+###################################################
+### Internet Explorer 6.0 SP2			###
+###################################################
++	OpenKey	.*	.*
++	CreateKey	.*	.*
++	CloseKey	.*	.*
++	EnumerateKey	.*	.*
++	EnumerateValueKey	.*	.*
++	QueryValueKey	.*	.*
++	QueryKey	.*	.*
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\EUDC\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Internet Explorer\\Main\\Window_Placement
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Internet Explorer\\Main\\Fullscreen
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Internet Explorer\\TypedURLs
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Internet Explorer\\Toolbar\\Locked
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Internet Explorer\\International\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Internet Explorer\\Security\\P3Global\\Enabled
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Internet Explorer\\Extensions\\CmdMapping\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MenuOrder\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\UserAssist\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\CabinetState\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\UNCAsIntranet
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\IntranetName
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\AutoDetect
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\ProxyBypass
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\UNCAsIntranet
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\MigrateProxy
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ProxyEnable
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ProxyServer
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Cache.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Connections\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\5.0\\Cache\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Ext\\Stats\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\ShellNoRoam\\BagMRU.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\ShellNoRoam\\Bags.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Ext\\Stats\\.+\\iexplore\\(Count|Time|Type)
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\ParseAutoexec
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\SystemCertificates\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SOFTWARE\\Classes\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Cache.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\5.0\\Cache.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Cache.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Passport\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SOFTWARE\\Microsoft\\Direct3D.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SOFTWARE\\Microsoft\\DirectDraw.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SOFTWARE\\Microsoft\\Cryptography\\RNG\\Seed
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SOFTWARE\\Microsoft\\AudioCompressionManager\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SOFTWARE\\Microsoft\\SystemCertificates\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Cache.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\5.0\\Cache.
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SYSTEM\\ControlSet001\\Hardware Profiles\\0001\\Software\\Microsoft\\windows\\CurrentVersion\\Internet Settings\\ProxyEnable
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SYSTEM\\ControlSet001\\Services\\EventLog\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\EUDC\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Internet Explorer\\Main\\Window_Placement
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Internet Explorer\\Main\\Fullscreen
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Internet Explorer\\TypedURLs
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Internet Explorer\\Toolbar\\Locked
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Internet Explorer\\International\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Internet Explorer\\Security\\P3Global\\Enabled
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Internet Explorer\\Extensions\\CmdMapping\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MenuOrder\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\UserAssist\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\CabinetState\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\UNCAsIntranet
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\IntranetName
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\AutoDetect
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\ProxyBypass
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\UNCAsIntranet
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\MigrateProxy
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ProxyEnable
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ProxyServer
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Cache.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Connections\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\5.0\\Cache\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Ext\\Stats\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\ShellNoRoam\\BagMRU.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\ShellNoRoam\\Bags.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Ext\\Stats\\.+\\iexplore\\(Count|Time|Type)
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\ParseAutoexec
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\SystemCertificates\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SOFTWARE\\Classes\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Cache.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\5.0\\Cache.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Cache.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Passport\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SOFTWARE\\Microsoft\\Direct3D.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SOFTWARE\\Microsoft\\DirectDraw.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SOFTWARE\\Microsoft\\Cryptography\\RNG\\Seed
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SOFTWARE\\Microsoft\\AudioCompressionManager\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SOFTWARE\\Microsoft\\SystemCertificates\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Cache.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\5.0\\Cache.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SYSTEM\\ControlSet001\\Hardware Profiles\\0001\\Software\\Microsoft\\windows\\CurrentVersion\\Internet Settings\\ProxyEnable
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKLM\\SYSTEM\\ControlSet001\\Services\\EventLog\\.+
++	DeleteKey	.*	.*
+#Plugins
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Scrunch\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\MediaPlayer\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows Media\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Multimedia\\ActiveMovie\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\ActiveMovie\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\MPEG2Demultiplexer\\.+
++	SetValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Multimedia\\msacm.imaadpcm\\.+
++	SetValueKey	C:\\WINDOWS\\msagent\\agentsvr\.exe	HKLM\\SOFTWARE\\Microsoft\\AudioCompressionManager\\DriverCache\\msacm.msadpcm\\.+
++	SetValueKey	C:\\WINDOWS\\msagent\\agentsvr\.exe	HKLM\\SOFTWARE\\Microsoft\\Microsoft Agent\\.+
++	SetValueKey	C:\\Program Files\\Messenger\\msmsgs\.exe	HKCU\\AppEvents\\Schemes\\Apps\\MSMSGS.*
++	SetValueKey	C:\\Program Files\\Messenger\\msmsgs\.exe	HKCU\\AppEvents\\EventLabels\\MSMsgs.+
++	SetValueKey	C:\\Program Files\\Messenger\\msmsgs\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\MSMSGS
++	SetValueKey	C:\\Program Files\\Messenger\\msmsgs\.exe	HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\.+
++	SetValueKey	C:\\Program Files\\Messenger\\msmsgs\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders\\.+
++	SetValueKey	C:\\Program Files\\Messenger\\msmsgs\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\.+
++	SetValueKey	C:\\WINDOWS\\system32\\svchost\.exe	HKLM\\SOFTWARE\\Microsoft\\EventSystem\\.+\\Subscriptions\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Scrunch\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\MediaPlayer\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Windows Media\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Multimedia\\ActiveMovie\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\ActiveMovie\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\MPEG2Demultiplexer\\.+
++	DeleteValueKey	C:\\Program Files\\Internet Explorer\\iexplore\.exe	HKCU\\Software\\Microsoft\\Multimedia\\msacm.imaadpcm\\.+
++	DeleteValueKey	C:\\WINDOWS\\msagent\\agentsvr\.exe	HKLM\\SOFTWARE\\Microsoft\\AudioCompressionManager\\DriverCache\\msacm.msadpcm\\.+
++	DeleteValueKey	C:\\WINDOWS\\msagent\\agentsvr\.exe	HKLM\\SOFTWARE\\Microsoft\\Microsoft Agent\\.+
++	DeleteValueKey	C:\\Program Files\\Messenger\\msmsgs\.exe	HKCU\\AppEvents\\EventLabels\\MSMsgs.+
++	DeleteValueKey	C:\\Program Files\\Messenger\\msmsgs\.exe	HKCU\\AppEvents\\Schemes\\Apps\\MSMSGS.*
++	DeleteValueKey	C:\\Program Files\\Messenger\\msmsgs\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\MSMSGS
++	DeleteValueKey	C:\\Program Files\\Messenger\\msmsgs\.exe	HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\.+
++	DeleteValueKey	C:\\Program Files\\Messenger\\msmsgs\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders\\.+
++	DeleteValueKey	C:\\Program Files\\Messenger\\msmsgs\.exe	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\.+
++	DeleteValueKey	C:\\WINDOWS\\system32\\svchost\.exe	HKLM\\SOFTWARE\\Microsoft\\EventSystem\\.+\\Subscriptions\\.+
+###################################################
+### Minus List - General Malicious Activity	###
+###################################################
+#Any modification to start/bootup sequence
+-	SetValueKey	.*	HLKM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run.*
+-	DeleteValueKey	.*	HLKM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run.*
+-	SetValueKey	.*	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run.*
+-	DeleteValueKey	.*	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run.*
+-	SetValueKey	.*	HKCU\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows\\Run.*
+-	DeleteValueKey	.*	HKCU\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows\\Run.*
+-	SetValueKey	.*	HKCU\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows\\Load.*
+-	DeleteValueKey	.*	HKCU\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows\\Load.*
+-	SetValueKey	.*	HLKM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\Userinit.*
+-	DeleteValueKey	.*	HLKM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\Userinit.*
+-	SetValueKey	.*	HLKM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\Shell.*
+-	DeleteValueKey	.*	HLKM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\Shell.*
+-	SetValueKey	.*	HLKM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run.*
+-	DeleteValueKey	.*	HLKM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run.*
+-	SetValueKey	.*	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run.*
+-	DeleteValueKey	.*	HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run.*
+-	SetValueKey	.*	HLKM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\BootExecute.*
+-	DeleteValueKey	.*	HLKM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\BootExecute.*
+-	SetValueKey	.*	HLKM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ShellServiceObjectDelayLoad\\.*
+-	DeleteValueKey	.*	HLKM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ShellServiceObjectDelayLoad\\.*

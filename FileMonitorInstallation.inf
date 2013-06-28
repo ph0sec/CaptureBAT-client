@@ -1,0 +1,91 @@
+;;;
+;;; Minispy
+;;;
+;;;
+;;; Copyright (c) 2001, Microsoft Corporation
+;;;
+
+[Version]
+Signature   = "$Windows NT$"
+Class       = "ActivityMonitor"                         ;This is determined by the work this filter driver does
+ClassGuid   = {b86dff51-a31e-4bac-b3cf-e8cfe75c9fc2}    ;This value is determined by the Class
+Provider    = %Msft%
+DriverVer   = 10/09/2007,1.0.0.0
+
+
+[DestinationDirs]
+DefaultDestDir          = 12
+Capture.DriverFiles     = 12            ;%windir%\system32\drivers
+
+;;
+;; Default install sections
+;;
+
+[DefaultInstall]
+OptionDesc          = %ServiceDescription%
+CopyFiles           = Capture.DriverFiles
+
+[DefaultInstall.Services]
+AddService          = %ServiceName%,,Capture.Service
+
+;;
+;; Default uninstall sections
+;;
+
+[DefaultUninstall]
+DelFiles   = Capture.DriverFiles
+DelReg = Capture.DelRegistry
+
+[DefaultUninstall.Services]
+DelService = %ServiceName%,0x200      ;Ensure service is stopped before deleting
+
+;
+; Services Section
+;
+
+[Capture.Service]
+DisplayName      = %ServiceName%
+Description      = %ServiceDescription%
+ServiceBinary    = %12%\%DriverName%.sys        ;%windir%\system32\drivers\
+Dependencies     = FltMgr
+ServiceType      = 2                            ;SERVICE_FILE_SYSTEM_DRIVER
+StartType        = 3                            ;SERVICE_DEMAND_START
+ErrorControl     = 1                            ;SERVICE_ERROR_NORMAL
+LoadOrderGroup   = "FSFilter Activity Monitor"
+AddReg           = Capture.AddRegistry
+
+;
+; Registry Modifications
+;
+
+[Capture.AddRegistry]
+HKR,"Instances","DefaultInstance",0x00000000,%DefaultInstance%
+HKR,"Instances\"%Instance1.Name%,"Altitude",0x00000000,%Instance1.Altitude%
+HKR,"Instances\"%Instance1.Name%,"Flags",0x00010001,%Instance1.Flags%
+
+[Capture.DelRegistry]
+HKLM,"System\CurrentControlSet\Services\CaptureFileMonitor"
+
+;
+; Copy Files
+;
+
+[Capture.DriverFiles]
+%DriverName%.sys
+
+;;
+;; String Section
+;;
+
+[Strings]
+Msft                    = "Microsoft Corporation"
+ServiceDescription      = "Capture Kernel Driver"
+ServiceName             = "CaptureFileMonitor"
+DriverName              = "CaptureFileMonitor"
+UserAppName             = "Capture"
+
+;Instances specific information.
+DefaultInstance         = "Capture - Top Instance"
+Instance1.Name          = "Capture - Top Instance"
+Instance1.Altitude      = "385000"
+Instance1.Flags         = 0x0          ; Suppress automatic attachments

@@ -1,0 +1,9 @@
+TARGETNAME=CaptureFileMonitor
+TARGETPATH=.
+DRIVERTYPE=FS
+TARGETTYPE=DRIVER
+
+TARGETLIBS=$(TARGETLIBS) \
+           $(IFSKIT_LIB_PATH)\fltMgr.lib
+
+SOURCES=CaptureFileMonitor.c   \

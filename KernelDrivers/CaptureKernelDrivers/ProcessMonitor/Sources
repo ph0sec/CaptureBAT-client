@@ -1,0 +1,7 @@
+TARGETNAME=CaptureProcessMonitor
+TARGETPATH=.
+TARGETTYPE=DRIVER
+
+TARGETLIBS=$(TARGETLIBS) \
+
+SOURCES=CaptureProcessMonitor.c   \

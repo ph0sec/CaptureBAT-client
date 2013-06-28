@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C++ Express 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CaptureClient", "CaptureClient.vcproj", "{4A258E9F-0B4B-40EF-B6C6-E69C630E5CAC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Application_InternetExplorer", "ApplicationPlugins\InternetExplorer\Application_InternetExplorer.vcproj", "{AE2C8E80-7D21-47AD-987B-43E0708AE549}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CaptureKernelDrivers", "KernelDrivers\CaptureKernelDrivers\CaptureKernelDrivers.vcproj", "{4EF34E6D-B30C-46E5-9FC5-967ECEADE2CD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Application_ClientConfigManager", "ApplicationPlugins\ClientConfigParser\ClientConfigParser.vcproj", "{C57EC146-60B3-499B-BDFA-5BB5504FDB89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A258E9F-0B4B-40EF-B6C6-E69C630E5CAC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4A258E9F-0B4B-40EF-B6C6-E69C630E5CAC}.Debug|Win32.Build.0 = Debug|Win32
+		{4A258E9F-0B4B-40EF-B6C6-E69C630E5CAC}.Release|Win32.ActiveCfg = Release|Win32
+		{4A258E9F-0B4B-40EF-B6C6-E69C630E5CAC}.Release|Win32.Build.0 = Release|Win32
+		{AE2C8E80-7D21-47AD-987B-43E0708AE549}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AE2C8E80-7D21-47AD-987B-43E0708AE549}.Debug|Win32.Build.0 = Debug|Win32
+		{AE2C8E80-7D21-47AD-987B-43E0708AE549}.Release|Win32.ActiveCfg = Release|Win32
+		{AE2C8E80-7D21-47AD-987B-43E0708AE549}.Release|Win32.Build.0 = Release|Win32
+		{4EF34E6D-B30C-46E5-9FC5-967ECEADE2CD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4EF34E6D-B30C-46E5-9FC5-967ECEADE2CD}.Debug|Win32.Build.0 = Debug|Win32
+		{4EF34E6D-B30C-46E5-9FC5-967ECEADE2CD}.Release|Win32.ActiveCfg = Release|Win32
+		{4EF34E6D-B30C-46E5-9FC5-967ECEADE2CD}.Release|Win32.Build.0 = Release|Win32
+		{C57EC146-60B3-499B-BDFA-5BB5504FDB89}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C57EC146-60B3-499B-BDFA-5BB5504FDB89}.Debug|Win32.Build.0 = Debug|Win32
+		{C57EC146-60B3-499B-BDFA-5BB5504FDB89}.Release|Win32.ActiveCfg = Release|Win32
+		{C57EC146-60B3-499B-BDFA-5BB5504FDB89}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
